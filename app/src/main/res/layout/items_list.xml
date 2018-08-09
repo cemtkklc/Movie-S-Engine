@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    >
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="2dip"
+        android:paddingTop="6dip"
+        android:textColor="#43bd00"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:text="title"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Release Date:  "
+        android:id="@+id/textView"
+        android:layout_below="@+id/title"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/release_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#acacac"
+        android:text="relesasdate"
+        android:layout_gravity="center_horizontal"
+        android:layout_alignTop="@+id/textView"
+        android:layout_toEndOf="@+id/textView" />
+
+    <TextView
+        android:id="@+id/vote"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:textColor="#5d5d5d"
+        android:textStyle="bold"
+        android:text="vote"
+        android:layout_below="@+id/id"
+        android:layout_toEndOf="@+id/textView3" />
+    <TextView
+        android:id="@+id/id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:textColor="#5d5d5d"
+        android:textStyle="bold"
+        android:text="id"
+        android:layout_below="@+id/textView"
+        android:layout_toEndOf="@+id/textView2" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ID:   "
+        android:id="@+id/textView2"
+        android:layout_alignTop="@+id/id"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Vote:   "
+        android:id="@+id/textView3"
+        android:layout_below="@+id/id"
+        android:layout_alignParentStart="true" />
+</RelativeLayout>
